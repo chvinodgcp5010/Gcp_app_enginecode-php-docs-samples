@@ -23,7 +23,8 @@ require __DIR__ . '/vendor/autoload.php';
 use Google\Cloud\Storage\StorageClient;
 
 # Your Google Cloud Platform project ID
-$projectId = 'YOUR_PROJECT_ID';
+#$projectId = 'YOUR_PROJECT_ID';
+$projectId = 'vnd-practice-gcp'; 	
 
 # Instantiates a client
 $storage = new StorageClient([
@@ -31,7 +32,8 @@ $storage = new StorageClient([
 ]);
 
 # The name for the new bucket
-$bucketName = 'my-new-bucket';
+#$bucketName = 'my-new-bucket';
+$bucketName = 'itrack-testing';
 
 # Creates the new bucket
 $bucket = $storage->createBucket($bucketName);
